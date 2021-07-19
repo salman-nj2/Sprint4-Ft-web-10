@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+         #cart{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            padding: 100px;
+        }
+        div img{
+            width: 250px;
+            object-fit: contain;
+        }
+        header{
+            height: 50px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+        #list{
+            display: flex;
+            
+        }
+        h3{
+            float: left;
+            margin-left: 10px;
+          font-family: sans-serif;
+        }
+        ul > a{
+            margin-left: 45px;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            color: black;
+        }
+    ul{
+        float: right;
+        margin-right: 50px;
+    }
+    .checkout-container{
+        width: 35%;
+        margin: auto;
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 10px;border-radius: 10px;
+       
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .checkout-container h2{
+        font-size: 35px;
+    }
+    .checkout-container p{
+        font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Jewellery Store</h3>
+        <ul id="list">
+            <a href="./product.html">Products</a> 
+            <a href="./cart.html">Cart</a> 
+        </ul>
+    </header>
+    <div id="cart"></div>
+    <div class="checkout-container">
+        <h2>Proceed to checkout</h2>
+        <p id="modal-cart"></p>
+        <p id="modal-price"></p>
+        <h2>Apply Promo</h2>
+        <input type="text" id="discount">
+        <button onclick="discountPrice()">Apply</button>
+    </div>
+</body>
+</html>
+<script src="cart.js"></script>

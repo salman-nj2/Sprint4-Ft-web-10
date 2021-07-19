@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+           form{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            background-color: whitesmoke;
+            margin: auto;
+            padding: 25px;
+        }
+        form label{
+            font-size: 25px;
+            margin: 5px;
+        }
+        form input{
+            height: 40px;
+            border-radius: 10px;
+            width: 80%;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+        }
+        button{
+            margin-left: 45%;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment">
+
+
+        <form id="form">
+
+            <label>Name of Owner</label>
+            <input type="text" id="owner">
+
+            <label>Card Number</label>
+            <input type="number" id="cardNumber">
+
+            <label>Expiry date</label>
+            <input type="month"  id = "expiryDate">
+            <label>CVV</label>
+            <input type="password" id="cvv">
+        </form>
+            <button onclick="order()">Place Order</button>
+    </div>
+</body>
+</html>
+<script src="payment.js"></script>
